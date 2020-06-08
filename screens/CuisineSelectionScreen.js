@@ -1,13 +1,25 @@
 import React from 'react';
 import { CUISINES } from '../data/test-data'
-import { View, Text, StyleSheet, FlatList } from 'react-native'
+import { View, Text, StyleSheet, FlatList, TouchableOpacity } from 'react-native'
 import Theme from '../constants/Theme'
-
-const renderCuisineCard = (itemData) => {
-    return <View style={styles.cuisineCard}><Text>{itemData.item.title}</Text></View>
-}
+import CuisineCard from '../components/CusineCard'
 
 const CuisineSelectionScreen = props => {
+    const renderCuisineCard = (itemData) => {
+        return (
+            <CuisineCard
+                image={itemData.item.image}
+                color={itemData.item.color}
+                title={itemData.item.title}
+                onPress={() => props.navigation.navigate({
+                    routeName: 'Menu',
+                    params: {
+                        cuisineId: itemData.item.id
+                    }
+                })} />
+        )
+    }
+
     return (
         <FlatList numColumns={2} data={CUISINES} renderItem={renderCuisineCard} />
     );
@@ -18,21 +30,15 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: "center",
         alignItems: "center"
-    },
-    cuisineCard: {
-        flex: 1,
-        margin: 20,
-        height: 200
     }
-
 })
 
 CuisineSelectionScreen.navigationOptions = {
     headerTitle: 'Cuisines',
-    headerStyle:{
+    headerStyle: {
         backgroundColor: Theme.primaryColor
     },
-    headerTintColor:'white'
+    headerTintColor: 'white'
 }
 
 export default CuisineSelectionScreen;
