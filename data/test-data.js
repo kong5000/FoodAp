@@ -20,7 +20,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/4109128/pexels-photo-4109128.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        false
+        false,
+        'Large pepperorni and cheese pizza'
     ),
     new MenuItem(
         'm2',
@@ -30,7 +31,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/315755/pexels-photo-315755.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        true
+        true,
+        'Large vegetarian pizza with onions, mushrooms and peppers'
     ),
     new MenuItem(
         'm3',
@@ -40,7 +42,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/1639557/pexels-photo-1639557.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        false
+        false,
+        '1/4lb all beef patty with cheese'
     ),
     new MenuItem(
         'm4',
@@ -50,7 +53,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/3607284/pexels-photo-3607284.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         true,
         true,
-        true
+        true,
+        'Bean based patty on a gluten free bun'
     ),
     new MenuItem(
         'm5',
@@ -60,7 +64,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/3926135/pexels-photo-3926135.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         true,
-        false
+        false,
+        'Stir fried noodles with vegetables'
     ),
     new MenuItem(
         'm6',
@@ -70,7 +75,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/1630495/pexels-photo-1630495.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        false
+        false,
+        'Fried rice with vegetables'
     ),
     new MenuItem(
         'm7',
@@ -80,7 +86,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/288264/pexels-photo-288264.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        false
+        false,
+        'Egg cheese and spinach quiche with slices of ham'
     ),
     new MenuItem(
         'm8',
@@ -90,7 +97,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/2135/food-france-morning-breakfast.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        true
+        true,
+        'Freshly baked classic croissant'
     ),
     new MenuItem(
         'm9',
@@ -100,7 +108,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/2412950/pexels-photo-2412950.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        true
+        true,
+        'Tortellini with tomato sauce and parmesan and basil'
     ),
     new MenuItem(
         'm10',
@@ -110,7 +119,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/699953/pexels-photo-699953.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         true,
         false,
-        true
+        true,
+        'Spicy and sour seafood soup'
     ),
     new MenuItem(
         'm11',
@@ -120,7 +130,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/410648/pexels-photo-410648.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         true,
         false,
-        false
+        false,
+        'Roasted rosemary rack of lamb'
     ),
     new MenuItem(
         'm12',
@@ -130,7 +141,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/1211887/pexels-photo-1211887.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         true,
         false,
-        true
+        true,
+        'Feta, olives, cucumbers and tomatoes'
     ),
     new MenuItem(
         'm13',
@@ -140,7 +152,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/2474658/pexels-photo-2474658.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         true,
-        true
+        true,
+        'Fried pastry with spiced potato filling'
     ),
     new MenuItem(
         'm14',
@@ -150,7 +163,8 @@ export const MENU_ITEMS = [
         'https://images.pexels.com/photos/958546/pexels-photo-958546.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940',
         false,
         false,
-        true
+        true,
+        'Spiced vegetable snack fritters'
     ),
 
 ]

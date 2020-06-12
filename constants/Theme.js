@@ -1,4 +1,4 @@
 export default {
-    primaryColor: 'red',
+    primaryColor: 'green',
     secondaryColor: 'blue'
 }

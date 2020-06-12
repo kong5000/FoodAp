@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, FlatList } from 'react-native'
 import { CUISINES, MENU_ITEMS } from '../data/test-data'
 import Theme from '../constants/Theme'
+import MenuItem from '../components/MenuItem'
 
 const MenuScreen = props => {
     const cuisineId = props.navigation.getParam('cuisineId')
@@ -9,12 +10,18 @@ const MenuScreen = props => {
     const selectedMeals = MENU_ITEMS.filter(item => item.cuisineId === cuisineId)
 
     const renderMenuItem = itemData => {
-        return(<View><Text>{itemData.item.title}</Text></View>)
+        return(<MenuItem 
+            title={itemData.item.title} 
+            price={itemData.item.price} 
+            description={itemData.item.description} 
+            onPress={() =>{}}
+            image={itemData.item.imageUrl}
+            />)
     }
 
     return (
         <View style={styles.screen}>
-            <FlatList data={selectedMeals} renderItem={renderMenuItem}/>
+            <FlatList style={styles.list} data={selectedMeals} renderItem={renderMenuItem}/>
         </View>
     );
 };
@@ -24,6 +31,9 @@ const styles = StyleSheet.create({
         flex:1,
         justifyContent: "center",
         alignItems: "center"
+    },
+    list:{
+        width: "100%"
     }
 })
 
