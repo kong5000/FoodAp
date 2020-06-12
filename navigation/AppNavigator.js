@@ -14,7 +14,7 @@ const navOptions = {
 const MenuNavigator = createStackNavigator({
     Cuisines: CuisineSelectionScreen,
     Menu: MenuScreen,
-    Item: ItemDetailScreen
+    Detail: ItemDetailScreen
 }, {
     defaultNavigationOptions: navOptions
 })

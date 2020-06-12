@@ -1,9 +1,8 @@
 import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, ImageBackground } from 'react-native'
 const MenuItem = props => {
-    console.log(props.image)
     return (
-        <TouchableOpacity onPress={props.onPress}>
+        <TouchableOpacity onPress={() => props.onPress(props.itemId)}>
             <View style={styles.menuItem}>
                 <View style={styles.info}>
                     <Text style={styles.header}>{props.title}</Text>
